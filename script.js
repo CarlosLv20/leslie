@@ -4,7 +4,11 @@ document.getElementById("loveButton").addEventListener("click", function() {
 });
 
 function showPhoto() {
-    var photo = document.getElementById("photo");
-    photo.src = "we.jpg"; // Cambia la URL por la URL de tu imagen
+    var photos = document.querySelectorAll(".photo img");
+    i=1;
+    photos.forEach(function(photo) {
+        photo.src = "foto"+i+".jpg"; // Cambia la URL por la URL de tus imágenes
+        i++;
+    });
     document.getElementById("photoContainer").style.display = "block";
 }
