@@ -53,3 +53,13 @@ p {
 .button:hover {
     background-color: #d81b60;
 }
+
+.photo {
+    display: inline-block;
+    width: 40%; /* Ajuste del ancho de cada foto */
+    margin: 1.5; /* Espacio entre las fotos */
+}
+
+.photo img {
+    width: 75%; /* Ajuste para que las fotos ocupen todo el espacio disponible */
+}
